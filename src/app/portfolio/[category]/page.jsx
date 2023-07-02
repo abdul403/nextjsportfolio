@@ -2,7 +2,7 @@ import Button from "@component/components/Button/Button";
 import Image from "next/image";
 import React from "react";
 import styles from "./page.module.css";
-import NotFound, { notFound } from "next/navigation";
+import { notFound } from "next/navigation";
 import { items } from "./data";
 
 const getData = (category) => {
@@ -33,7 +33,12 @@ const Category = ({ params }) => {
             <Button url="#" text="See More" />
           </div>
           <div className={styles.imgContainer}>
-            <Image className={styles.img} fill={true} src={item.image} />
+            <Image
+              className={styles.img}
+              alt="Category Image"
+              fill={true}
+              src={item.image}
+            />
           </div>
         </div>
       ))}

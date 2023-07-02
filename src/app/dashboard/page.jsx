@@ -107,7 +107,7 @@ const Dashboard = () => {
                     <Image
                       src={post.img}
                       className={styles.img}
-                      aalt="image"
+                      alt="image"
                       width={200}
                       height={100}
                     />
