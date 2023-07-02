@@ -51,3 +51,10 @@
   font-weight: 300;
   text-align: justify;
 }
+
+@media (max-width: 768px) {
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
