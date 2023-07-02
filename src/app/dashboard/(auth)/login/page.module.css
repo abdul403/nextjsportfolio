@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input {
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid #53c28b;
+  border-radius: 5px;
+  color: #0f7442;
+  outline: none;
+  font-size: 20px;
+}
+
+.button {
+  padding: 20px;
+  width: 300px;
+  cursor: pointer;
+  background-color: #53c28b;
+  border: none;
+  border-radius: 5px;
+  color: #eee;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.link {
+  color: #53c28b;
+  border-bottom-style: solid;
+}
+
+.googleBtn {
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #53c28b;
+  border-radius: 10px;
+  color: #eee;
+  font-weight: bold;
+}
+
+.or {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #bbb;
+}
