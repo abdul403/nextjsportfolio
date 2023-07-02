@@ -7,3 +7,10 @@
   width: max-content;
   color: white;
 }
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    margin: 0 auto;
+  }
+}

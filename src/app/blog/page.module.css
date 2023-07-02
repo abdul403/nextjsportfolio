@@ -17,3 +17,24 @@
   font-size: 18px;
   color: #999;
 }
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .desc {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .image {
+    max-width: 90%;
+  }
+}

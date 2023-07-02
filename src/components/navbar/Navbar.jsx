@@ -23,6 +23,9 @@ const links = [
     title: "Blog",
     url: "/blog",
   },
+];
+
+const links2 = [
   {
     id: 4,
     title: "About",
@@ -47,20 +50,31 @@ const Navbar = () => {
       <Link className={styles.logo} href={"/"}>
         webDev
       </Link>
-      <div className={styles.links}>
-        <DarkModeToogle />
-        {links.map((link) => (
-          <Link className={styles.link} key={link.id} href={link.url}>
-            {link.title}
-          </Link>
-        ))}
 
-        {session.status === "authenticated" && (
-          <button className={styles.logout} onClick={signOut}>
-            {" "}
-            Logout
-          </button>
-        )}
+      <div className={styles.mainLinks}>
+        <div className={styles.links}>
+          <DarkModeToogle />
+          {links.map((link) => (
+            <Link className={styles.link} key={link.id} href={link.url}>
+              {link.title}
+            </Link>
+          ))}
+        </div>
+
+        <div className={styles.links}>
+          {links2.map((link) => (
+            <Link className={styles.link} key={link.id} href={link.url}>
+              {link.title}
+            </Link>
+          ))}
+
+          {session.status === "authenticated" && (
+            <button className={styles.logout} onClick={signOut}>
+              {" "}
+              Logout
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );

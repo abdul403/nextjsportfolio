@@ -5,7 +5,7 @@ import styles from "./footer.module.css";
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <div>@webDev, All rights reserved.</div>
+      <div className={styles.content}>@webDev, All rights reserved.</div>
       <div className={styles.social}>
         <Image
           src="/1.png"

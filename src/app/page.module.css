@@ -49,3 +49,25 @@
   width: max-content;
   color: white;
 }
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .desc {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .img {
+    margin-bottom: 2.7em;
+    height: auto;
+  }
+}

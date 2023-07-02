@@ -112,6 +112,7 @@ const Dashboard = () => {
                       height={100}
                     />
                   </div>
+
                   <h2 className={styles.postTitle}>{post.title}</h2>
                   <span
                     className={styles.postDelete}

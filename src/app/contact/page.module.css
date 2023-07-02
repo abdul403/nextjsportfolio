@@ -18,7 +18,7 @@
 
 .img {
   object-fit: contain;
-  /* animation: move 3s infinite ease alternate; */
+  animation: move 3s infinite ease alternate;
 }
 
 @keyframes move {
@@ -45,11 +45,24 @@
   border: none;
   outline: none;
   border: 3px solid #bbb;
+  color: rgb(14, 39, 14);
 }
 
 .input::placeholder,
 .textArea::placeholder {
-  color: black;
   font-weight: bold;
   text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5em;
+    margin: 50px;
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
 }

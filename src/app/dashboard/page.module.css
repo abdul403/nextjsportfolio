@@ -22,13 +22,13 @@
 }
 
 .img {
-  object-fit: contain;
+  object-fit: cover;
+  width: 100%;
 }
 
 .imgContainer {
-  width: 200px;
+  width: 400px;
   height: 100px;
-  position: 0;
 }
 
 .postDelete {
@@ -57,4 +57,21 @@
   font-size: 20px;
 
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+  }
+
+  .imgContainer {
+    width: 90%;
+  }
 }
