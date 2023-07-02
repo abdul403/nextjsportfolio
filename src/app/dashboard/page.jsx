@@ -6,11 +6,6 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-export const metadata = {
-  title: "Dashboard Page",
-  description: "This is Dashboard Page ",
-};
-
 // fetching data using client side component using useEffect
 
 const Dashboard = () => {
